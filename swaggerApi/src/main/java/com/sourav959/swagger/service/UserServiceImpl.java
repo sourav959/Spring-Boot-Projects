@@ -5,7 +5,6 @@ import com.sourav959.swagger.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -18,8 +17,6 @@ import java.util.List;
 @AllArgsConstructor
 @Slf4j
 public class UserServiceImpl implements UserService {
-
-    private final RestTemplate restTemplate;
 
     private final UserRepository userRepository;
 
